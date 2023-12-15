@@ -1,4 +1,6 @@
 import { StyleSheet } from "react-native"
+import { colors } from '../../global/colors'
+
 
 const StyleHeader = StyleSheet.create({
 
@@ -11,6 +13,7 @@ const StyleHeader = StyleSheet.create({
   },
   headerTitle:{
     color:'#fff',
+    fontFamily:'ComicNeue-Bold'
 
   }
 

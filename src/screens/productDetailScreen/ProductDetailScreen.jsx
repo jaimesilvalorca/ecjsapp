@@ -1,7 +1,7 @@
 import {Text, View } from 'react-native'
 import styles from './Styles'
 
-const ProductsByCategoryScreen = () => {
+const ProductDetailScreen = () => {
   return (
     <View style={styles.container}>
       <Text>Productos por categoria</Text>
@@ -9,5 +9,5 @@ const ProductsByCategoryScreen = () => {
   )
 }
 
-export default ProductsByCategoryScreen
+export default ProductDetailScreen
 
