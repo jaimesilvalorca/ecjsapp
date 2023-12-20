@@ -6,15 +6,23 @@ const StyleHeader = StyleSheet.create({
 
   headerContainer:{
     height: 100,
-    justifyContent:'center',
     alignItems:'center',
-    backgroundColor:'#22223B'
+    backgroundColor:'#22223B',
+    flexDirection:'row',
+    paddingHorizontal:30,
+    paddingTop:30,
+  
+    
+
+    
 
   },
   headerTitle:{
+    paddingLeft:'35%',
     color:'#fff',
-    fontFamily:'ComicNeue-Bold'
-
+    display:'flex',
+    fontFamily:'ComicNeue-Bold',
+    fontSize:24
   }
 
 

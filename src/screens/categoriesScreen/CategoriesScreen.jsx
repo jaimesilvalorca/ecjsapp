@@ -13,7 +13,6 @@ const CategoriesScreen = ({navigation}) => {
 
   return (
     <>
-    <Header title={'Categorias'}/>
     <FlatList 
       data={categories_data}
       renderItem={renderCategoryItem}

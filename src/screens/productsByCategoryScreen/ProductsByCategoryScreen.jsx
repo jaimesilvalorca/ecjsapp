@@ -39,7 +39,6 @@ const ProductsByCategoryScreen = ({navigation,route}) => {
 
   return (
     <>
-      <Header title={'Productos'} />
       <Search onSearchHandlerEvent={onSearch} />
       <FlatList
         data={productsByCategory}

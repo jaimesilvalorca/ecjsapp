@@ -2,6 +2,7 @@ import { ActivityIndicator, Image, Text, TouchableOpacity, View, useWindowDimens
 import styles from './Styles'
 import products_data from '../../data/products_data.json'
 import { useEffect, useState } from 'react'
+import Header from '../../components/header/Header'
 
 const ProductDetailScreen = ({ route}) => {
   const [productSelected, setProductSelected] = useState({})
