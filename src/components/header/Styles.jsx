@@ -23,6 +23,10 @@ const StyleHeader = StyleSheet.create({
     display:'flex',
     fontFamily:'ComicNeue-Bold',
     fontSize:24
+  },
+  viewNull:{
+    paddingLeft:'6%'
+
   }
 
 
