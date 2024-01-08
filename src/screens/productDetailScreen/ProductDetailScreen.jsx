@@ -6,6 +6,7 @@ import Header from '../../components/header/Header'
 import {useSelector, useDispatch} from 'react-redux'
 import { setProductSelected } from '../../features/shopSlice'
 import Carousel from '../../components/carousel/Carousel'
+import { addItem } from '../../features/cartSlice'
 
 
 const ProductDetailScreen = ({ route}) => {
@@ -28,6 +29,13 @@ const ProductDetailScreen = ({ route}) => {
     setIsLoading(!isLoading)
   }, [productId])
 
+  const dispatch = useDispatch()
+
+  const onAddToCart = () =>{
+    dispatch(addItem({...productSelected,quantity:1}))
+
+  }
+
 
 
   return (
@@ -49,8 +57,8 @@ const ProductDetailScreen = ({ route}) => {
                 <Text style={styles.title}>{productSelected.title}</Text>
                 <Text style={styles.description}>{productSelected.description}</Text>
                 <Text style={styles.price}>$ {productSelected.price}</Text>
-                <TouchableOpacity style={isPortrait ? styles.buyButton : styles.buyAlt} onPress={() => null}>
-                  <Text style={styles.buyText}>Comprar</Text>
+                <TouchableOpacity style={isPortrait ? styles.buyButton : styles.buyAlt} onPress={onAddToCart}>
+                  <Text style={styles.buyText}>Agregar al carrito</Text>
                 </TouchableOpacity>
               </View>
             </ScrollView>

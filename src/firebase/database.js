@@ -1,0 +1,1 @@
+export const base_url = 'https://ecjsapp-default-rtdb.firebaseio.com/'
